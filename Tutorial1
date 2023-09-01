@@ -1,0 +1,710 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNaZ3033yuIv5wIQuFaEmO9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/prachinova/LabTutorial/blob/main/Tutorial1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "Question 0"
+      ],
+      "metadata": {
+        "id": "n47MZ9odsuzc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "String"
+      ],
+      "metadata": {
+        "id": "itSDAfsDs1nR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "F02Y_rMJXrHL",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1d54017b-50a6-44a8-8486-41070d69e7ac"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ],
+      "source": [
+        "my_string = 'Hello prachi'\n",
+        "#find the index of a substring\n",
+        "index = my_string.find(\"prachi\")\n",
+        "print(index)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#replace a substring with another string\n",
+        "new_string = my_string.replace(\"prachi\",\"prachinova\")\n",
+        "print(new_string)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pbf9QZY6hcyz",
+        "outputId": "1c079181-48cb-4d8b-e0cf-d61dcc77a552"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello prachinova\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#string case conversion\n",
+        "lower_case = my_string.lower()\n",
+        "upper_case = my_string.upper()\n",
+        "print(lower_case)\n",
+        "print(upper_case)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G2G9TzEukmk0",
+        "outputId": "c38621f8-e95a-4508-a82e-6a149b4cd6dd"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello prachi\n",
+            "HELLO PRACHI\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tuple"
+      ],
+      "metadata": {
+        "id": "BZrG-pW8s7ln"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_tuple = (2,4,6,8,10)\n",
+        "#find index of a value\n",
+        "index = my_tuple.index(4)\n",
+        "print(index)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RJd6_esmk7iP",
+        "outputId": "7b90150b-0f51-4303-8719-d70c61f27876"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#get the lenght of the tuple\n",
+        "lenght = len(my_tuple)\n",
+        "print(lenght)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i6tISiWslksg",
+        "outputId": "589f488e-4eb4-4155-e484-816416b195d9"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# get min and max values\n",
+        "minimum = min(my_tuple)\n",
+        "maximum = max(my_tuple)\n",
+        "print(minimum)\n",
+        "print(maximum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GBtc-gk0l-mv",
+        "outputId": "246e51f4-3e13-4749-d646-9dcab8225693"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#add values to existing tuple\n",
+        "my_tuple1 = my_tuple + (12,14)\n",
+        "print(my_tuple1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ens2NEEXmhqa",
+        "outputId": "c8172c89-70db-4cd7-e356-7201fa0dc6f7"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(2, 4, 6, 8, 10, 12, 14)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "List"
+      ],
+      "metadata": {
+        "id": "MJG7nbM2s_cY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list = [2,4,6,8,10]\n",
+        "#add an element at the nend\n",
+        "my_list.append(12)\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QObzKraWm6vF",
+        "outputId": "609e91e5-2892-4939-f9a6-c0c79cf876f7"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8, 10, 12]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# add an element in list at a specific index\n",
+        "my_list.insert(5, 12)\n",
+        "print(my_list)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QvosKc7gncZT",
+        "outputId": "66f86af7-5063-4267-a833-f23be1393aa2"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8, 10, 12, 12]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#remove an element in list\n",
+        "my_list.remove(12)\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-m6KpkRjoKeJ",
+        "outputId": "7460b98c-5344-4edf-bda6-e6f5b6281ce6"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8, 10, 12]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#remove an element by index\n",
+        "my_list.pop(4)\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jHzzYt4vocfC",
+        "outputId": "c17554a6-9ef3-4cb8-e24f-e25f594fd061"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Set"
+      ],
+      "metadata": {
+        "id": "h4-PDpUCtC19"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {1,3,5,7,9}\n",
+        "set2 = {2,4,6,8,10}\n",
+        "#union of sets\n",
+        "union = set1 | set2\n",
+        "print(union)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UisXbxCvo6sJ",
+        "outputId": "f1a96cae-15da-40d9-a88b-62b614513bca"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#intersection\n",
+        "intersection = set1 & set2\n",
+        "print(intersection)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tw_sNsh8pdBc",
+        "outputId": "42de2844-52d9-4888-c8ab-cad4da39fc61"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "set()\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#discarding an element\n",
+        "set2.discard(10)\n",
+        "print(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ysWeZ4Vjpv-j",
+        "outputId": "c63907b7-8825-42bf-98dd-a5099a2a220c"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{2, 4, 6, 8}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#add an element to the set\n",
+        "set2.add(10)\n",
+        "print(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O_H31xq0qKZx",
+        "outputId": "24171274-6c72-4b70-b31f-70dc0ec66af9"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{2, 4, 6, 8, 10}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dict"
+      ],
+      "metadata": {
+        "id": "W_jnBypctFoH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict = {\"coursename\":\"MML\", \"Duration\":\"2years\",\"mode\":\"online\"}\n",
+        "#get a list of keys and values\n",
+        "keys = list(dict.keys())\n",
+        "values = list(dict.values())\n",
+        "print(keys)\n",
+        "print(values)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ievozQPQqSuF",
+        "outputId": "b2f819cb-3a26-48d8-a34a-205d3ec74028"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['coursename', 'Duration', 'mode']\n",
+            "['MML', '2years', 'online']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#get a value associated with the key\n",
+        "coursename = dict.get(\"coursename\")\n",
+        "print(coursename)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_T8ZbWd9rHwb",
+        "outputId": "f061e753-1b94-472f-c7da-be5b55ac2286"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "MML\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#updating the dict\n",
+        "dict.update({\"coursename\":\"FMML\"})\n",
+        "print(dict)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wfxIPbODrs66",
+        "outputId": "2b5ab950-04f1-4818-fe69-de3b3b1f24cb"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'coursename': 'FMML', 'Duration': '2years', 'mode': 'online'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 1"
+      ],
+      "metadata": {
+        "id": "0CqVTbedtJfP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def reverse_and_concatenate(A,B):\n",
+        "  reversed_A = A[::-1]\n",
+        "  result = reversed_A + B\n",
+        "  return result\n",
+        "\n",
+        "string_A = \"whatisthis\"\n",
+        "string_B = \"idontknow\"\n",
+        "result_string = reverse_and_concatenate(string_A, string_B)\n",
+        "\n",
+        "print(result_string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "meU85cC7tL91",
+        "outputId": "cc63f160-30c4-431e-d9bc-433f82b56784"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sihtsitahwidontknow\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 2"
+      ],
+      "metadata": {
+        "id": "4lskgdIBxd7v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "workhours = [('abby',100, 'F'),('billy',400, 'M'),('cassie',800,'F'),('maggi',600,'F'),('alex',500,'M'),('raj',225,'M'),('penny',920,'F'),('ben',300,'M')]\n",
+        "def find_female_with_most_hours(workhours):\n",
+        "  max_hours = 0\n",
+        "  female_with_most_hours = None\n",
+        "\n",
+        "  for name, hours, gender in workhours:\n",
+        "    if gender == 'F' and hours > max_hours:\n",
+        "      max_hours = hours\n",
+        "      female_with_most_hours = name\n",
+        "  return female_with_most_hours, max_hours\n",
+        "\n",
+        "def calculate_payment(hours_worked, hourly_rate = 20):\n",
+        "  return hours_worked*hourly_rate\n",
+        "\n",
+        "female_worker, max_hours = find_female_with_most_hours(workhours)\n",
+        "payment = calculate_payment(max_hours)\n",
+        "\n",
+        "print(f\"The female worker that worked the most hours is {female_worker} and she should be paid ${payment}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NFFvpMiixhW1",
+        "outputId": "ff2131ec-98b4-4695-b74a-465fa713c671"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The female worker that worked the most hours is penny and she should be paid $18400\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 3"
+      ],
+      "metadata": {
+        "id": "xR-7nNaq15TC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "#create a matrix\n",
+        "row1 = np.array([1,1])\n",
+        "row2 = np.array([2,2])\n",
+        "matrix_a = np.vstack([row1, row2])\n",
+        "matrix_5x5 = np.tile(matrix_a,(5,1))\n",
+        "\n",
+        "print(\"5x5 matrix: \")\n",
+        "print(matrix_5x5)\n",
+        "\n",
+        "matrix_b = np.random.randint(1,10,size=(2,5))\n",
+        "\n",
+        "dot_product_result = np.dot(matrix_5x5, matrix_b)\n",
+        "print(\"\\nDot product result: \")\n",
+        "print(dot_product_result)\n",
+        "print(\"shape of dot product result: \", dot_product_result.shape)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nBjE7n-y18fo",
+        "outputId": "b6409935-ed02-4907-f246-35ec372559dc"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5x5 matrix: \n",
+            "[[1 1]\n",
+            " [2 2]\n",
+            " [1 1]\n",
+            " [2 2]\n",
+            " [1 1]\n",
+            " [2 2]\n",
+            " [1 1]\n",
+            " [2 2]\n",
+            " [1 1]\n",
+            " [2 2]]\n",
+            "\n",
+            "Dot product result: \n",
+            "[[12 18 10 11 11]\n",
+            " [24 36 20 22 22]\n",
+            " [12 18 10 11 11]\n",
+            " [24 36 20 22 22]\n",
+            " [12 18 10 11 11]\n",
+            " [24 36 20 22 22]\n",
+            " [12 18 10 11 11]\n",
+            " [24 36 20 22 22]\n",
+            " [12 18 10 11 11]\n",
+            " [24 36 20 22 22]]\n",
+            "shape of dot product result:  (10, 5)\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
