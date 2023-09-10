@@ -1,0 +1,94 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMLbbgjRchF+eAria0VwLYw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/prachinova/LabTutorial/blob/main/Feature%20selection\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Best combination of features\n",
+        "Feature selection is primarily focused on removing non-informative or\n",
+        "redundant predictors from the model.One way to think about feature selection methods are in terms of supervised and unsupervised methods.Another way to consider the mechanism used to select features which may be divided into wrapper and filter methods. These methods are almost always supervised and are evaluated based on the performance of a resulting model on a hold out dataset.\n"
+      ],
+      "metadata": {
+        "id": "2oR0-VJxnIIF"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Testing and visualizing four or more features:\n",
+        "Pairwise Feature Plots:\n",
+        "Create scatterplots for pairs of features. This allows you to visualize the relationship between two features at a time.\n",
+        "\n",
+        "Parallel Coordinates:\n",
+        "Represent each feature as a vertical axis and connect data points with lines. Each line represents an instance in your dataset.\n",
+        "This technique allows you to visualize relationships between multiple features simultaneously.\n",
+        "\n",
+        "Heatmaps:\n",
+        "Create heatmaps to visualize correlations between features. Heatmaps can help you identify which features are strongly correlated with each other.\n",
+        "\n",
+        "Clustering or Clustering Visualization:\n",
+        "Apply clustering techniques to group similar data points based on all features.\n",
+        "Visualize the clusters in 2D or 3D space to understand how the model groups data points."
+      ],
+      "metadata": {
+        "id": "YEuaW5rkH_Pt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3.Can you come up with your own features?\n",
+        "Yes.\n",
+        "Text data, image data,time series data, audio data,geospatial data"
+      ],
+      "metadata": {
+        "id": "6L20dBhxJim6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Will these features work for different classes other than 0 and 1?\n"
+      ],
+      "metadata": {
+        "id": "_r6QngmSJ_wB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "What will happen if we take more that two classes at a time?\n",
+        "In a multi-class classification task, you're dealing with the categorization of data into three or more distinct classes or categories. The dynamics and challenges in multi-class classification differ from binary classification.\n",
+        "Increased Complexity,Class Imbalance,Classifiers,Evaluation Metrics,Visualization Challenges."
+      ],
+      "metadata": {
+        "id": "YPTHlFT7Kjyn"
+      }
+    }
+  ]
+}
